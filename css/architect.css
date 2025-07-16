@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+main > section{
+    margin-top: 130px;
+}
+/* ======shared style===== */
+
+.flex{
+    display: flex;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.sb{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark-2{
+    color: #424242;
+
+}
+
+.dark-3{
+    color: #727272;
+}
+
+.primary{
+    color: rgb(255, 144, 14);
+}
+
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary{
+    background-color: #ff900e;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+
+.description{
+    color: rgb(114, 114, 114);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* ========header======== */
+
+
+
+
+/* =====navbar===== */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    margin-right: 30px;
+
+}
+
+.nav-link{
+    font-weight: 500;
+    color: #424242;
+}
+
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.brand{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* banner */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    /* margin-top: 100px; */
+    margin-bottom: 1rem;
+}
+
+.description{
+    color: rgb(114, 114, 114);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.banner-img{
+    width: 100%;
+}
+
+.banner{
+    padding-bottom: 0;
+}
+
+/* =========main========= */
+
+/* teams and feature*/
+
+.teams{
+    gap: 4.5rem;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.team-feature{
+
+}
+
+.feature-title{
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* responsive media query */
+@media (max-width: 576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+        
+    }
+}
