@@ -26,6 +26,16 @@ main > section{
     margin-top: 130px;
 }
 
+button , #experience-badge{
+    transition: transform 0.3s ease;
+}
+
+button:hover, #experience-badge:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgb(206, 125, 32);
+}
+
 /* ======shared style===== */
 
 .flex{
@@ -116,6 +126,7 @@ main > section{
 .brand{
     font-size: 3rem;
     font-weight: 700;
+    color: black;
 }
 
 /* banner */
@@ -364,10 +375,9 @@ footer{
     }
     
     #experience-badge{
-        
-        margin-top: 10px;
-        margin-left: 0px;
+        margin-left: 0;
     }
+    
 }
 
 
@@ -425,7 +435,7 @@ footer{
     
     #experience-badge{
         
-        margin-top: 10px;
+        margin-top: -100px;
         margin-left: 0px;
     }
 
